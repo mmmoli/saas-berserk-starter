@@ -28,7 +28,6 @@
 		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^7.0.0",
 		"autoprefixer": "^10.4.16",
-		"dotenv": "^16.4.5",
 		"drizzle-kit": "^0.20.14",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -55,6 +54,7 @@
 		"bits-ui": "^0.20.1",
 		"clsx": "^2.1.0",
 		"drizzle-orm": "^0.30.4",
+		"stripe": "^14.22.0",
 		"tailwind-merge": "^2.2.2",
 		"tailwind-variants": "^0.2.1"
 	}

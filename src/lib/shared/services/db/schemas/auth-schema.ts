@@ -1,5 +1,5 @@
 import { integer, sqliteTable, text, primaryKey } from 'drizzle-orm/sqlite-core';
-import type { AdapterAccount } from '@auth/core/adapters';
+import type { Account } from '@auth/sveltekit';
 
 export const users = sqliteTable('user', {
 	id: text('id').notNull().primaryKey(),
@@ -15,7 +15,7 @@ export const accounts = sqliteTable(
 		userId: text('userId')
 			.notNull()
 			.references(() => users.id, { onDelete: 'cascade' }),
-		type: text('type').$type<AdapterAccount['type']>().notNull(),
+		type: text('type').$type<Account['type']>().notNull(),
 		provider: text('provider').notNull(),
 		providerAccountId: text('providerAccountId').notNull(),
 		refresh_token: text('refresh_token'),
