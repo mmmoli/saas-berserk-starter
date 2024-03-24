@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -15,7 +15,8 @@ const config = {
 		alias: {
 			'~ui/utils': './src/lib/shared/design-system/utils',
 			'~ui/*': './src/lib/shared/design-system/ui/*',
-			'~shared/routes': './src/lib/ROUTES'
+			'~shared/routes': './src/lib/ROUTES',
+			'~shared/services/*': './src/lib/shared/services/*'
 		}
 	}
 };

@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { Button } from '~ui/button';
+	import { page } from '$app/stores';
 </script>
 
 <h1>App</h1>
 
-<Button>Click me</Button>
+{#if $page.data.session}
+	<pre>{JSON.stringify($page.data.session, null, 2)}</pre>
+{/if}
