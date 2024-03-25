@@ -1,1 +1,0 @@
-const o={"/":"/","/app":"/app","/signin":"/signin","/signout":"/signout"},u={},e={"default /signin":"/signin","default /signout":"/signout"},c={},t={...o,...e,...u,...c};function g(n,...s){if(t[n]instanceof Function){const i=t[n];return i(...s)}else return t[n]}export{g as r};
